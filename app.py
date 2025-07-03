@@ -2,9 +2,13 @@ import streamlit as st
 import pandas as pd
 import yfinance as yf
 from langchain.agents import initialize_agent, Tool
-from langchain_community.llms import OpenAI
+from langchain_openai import OpenAI
 from langchain.memory import ConversationBufferMemory
+import streamlit as st
+import os
 
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+llm = OpenAI(temperature=0)
 # --- Tool Functions ---
 
 def load_trades(file):
