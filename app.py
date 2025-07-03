@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import yfinance as yf
 from langchain.agents import initialize_agent, Tool
-from langchain.llms import OpenAI
+from langchain_community.llms import OpenAI
 from langchain.memory import ConversationBufferMemory
 
 # --- Tool Functions ---
