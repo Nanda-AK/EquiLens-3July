@@ -3,6 +3,7 @@ openai
 pandas
 yfinance
 streamlit
+langchain-openai
 
 langchain>=0.1.16
 langchain_community>=0.0.19
