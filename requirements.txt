@@ -1,10 +1,5 @@
-langchain
-openai
 pandas
 yfinance
-streamlit
-langchain-openai
-
-langchain>=0.1.16
-langchain_community>=0.0.19
-langchain-openai>=0.0.8
+openai==0.28.1
+langchain==0.0.320
+pydantic<2.0
